@@ -1,5 +1,5 @@
 {
-  "name": "swr-test",
+  "name": "consumeragain",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,12 +8,30 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@ant-design/icons": "^4.7.0",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@wipsie/ui": "^1.0.160",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "next": "12.0.3",
+    "nookies": "^2.5.2",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-feather": "^2.0.9",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.0",
+    "swr": "^1.3.0"
   },
   "devDependencies": {
+    "@types/nookies": "^2.0.3",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^17.0.34",
     "eslint": "7.32.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.0.3",
+    "typescript": "^4.4.4"
   }
 }
