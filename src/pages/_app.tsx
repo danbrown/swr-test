@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Providers from "../providers";
 import { SWRConfig } from "swr";
 import axios from "axios";
+import { WipsieApiProvider } from "../_wipsieApi/context/WipsieApiContext";
 
 const MyApp: React.FC<any> = ({ Component, pageProps }) => {
   return (
@@ -13,7 +14,9 @@ const MyApp: React.FC<any> = ({ Component, pageProps }) => {
           fetcher: (url) => axios.get(url).then((res) => res.data), // a custom fetcher
         }}
       >
-        <Component {...pageProps} />
+        <WipsieApiProvider>
+          <Component {...pageProps} />
+        </WipsieApiProvider>
       </SWRConfig>
     </Providers>
   );
